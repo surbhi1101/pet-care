@@ -198,11 +198,11 @@
   }
 
   .hero-image-wrap {
-    @apply relative flex items-center w-full;
+    @apply relative flex items-center w-full mt-30 lg:mt-0;
   }
 
   .hero-dog-img {
-    @apply relative z-10 object-cover object-top h-[200px] xl:h-[500px];
+    @apply relative z-10 object-cover object-top h-[200px] lg:h-[500px];
   }
 
   /* Paw prints floating */
@@ -588,9 +588,11 @@
            border border-transparent
            cursor-pointer xl:pt-[20px] xl:pb-[25px]
            xl:text-[16px] xl:px-[35px] xl:py-5
-           hover:bg-white hover:text-[#124C5F] hover:border-[#124C5F];
+           hover:bg-white hover:text-[#124C5F];
   }
-
+  .about-explore-btn:hover {
+    border: 1px solid #124c5f;
+  }
   .about-btn-arrow {
     @apply flex items-center transition-transform duration-300;
   }
@@ -798,7 +800,8 @@
   }
 
   .sh-explore-btn:hover {
-    @apply bg-white text-[#124C5F] border-[#124C5F];
+    @apply bg-white text-[#124C5F];
+    border: 1px solid #124c5f;
   }
 
   .sh-explore-btn .btn-arrow {
