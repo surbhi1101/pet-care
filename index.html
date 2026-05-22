@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PupHub - Taking Care For Your Smart Dog</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+          "
+        >
+          <li><a href="#" class="mobile-menu-link">Our Services</a></li>
+          <li><a href="#" class="mobile-menu-link">About Us</a></li>
+          <li><a href="#" class="mobile-menu-link">Products</a></li>
+          <li><a href="#" class="mobile-menu-link">Pet Care</a></li>
+          <li><a href="#" class="mobile-menu-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-actions">
+        <button class="mobile-btn-signin" aria-label="Sign In">Sign In</button>
+        <button class="mobile-btn-register" aria-label="Register">
+          Register
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== STICKY NAVBAR ===== -->
+    <header class="navbar" id="navbar" role="banner">
+      <div class="navbar-inner">
+        <div class="navbar-logo">
+          <a href="#" aria-label="PupHub Home">
+            <img
+              src="./assets/images/logo.svg"
+              alt="PupHub Logo"
+              width="140"
+              height="42"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#" class="navbar-link">Our Services</a></li>
+            <li><a href="#" class="navbar-link">About Us</a></li>
+            <li><a href="#" class="navbar-link">Products</a></li>
+            <li><a href="#" class="navbar-link">Pet Care</a></li>
+            <li><a href="#" class="navbar-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-actions">
+          <button class="btn-signin" aria-label="Sign In">Sign In</button>
+          <button class="btn-register" aria-label="Register">Register</button>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" aria-label="Hero">
+      <div class="hero-inner">
+        <div class="hero-content fade-section">
+          <div>
+            <h1>Taking care<br />for your Smart Dog !</h1>
+          </div>
+          <div>
+            <p class="hero-sub">
+              Human–canine bonding is the relationship<br />
+              between dogs and humans.
+            </p>
+          </div>
+          <a href="#" class="btn-explore" aria-label="Explore More">
+            EXPLORE MORE
+            <span class="arrow-icon" aria-hidden="true">
+              <img src="./assets/images/next.svg" alt="next-btn" />
+            </span>
+          </a>
+        </div>
+        <div class="hero-image-wrap fade-section">
+          <div class="dog-img">
+            <img
+              class="hero-dog-img hero-img-entrance"
+              src="./assets/images/hero-section.svg"
+              alt="Happy dog wearing sunglasses"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES CATEGORY SECTION -->
+    <section class="services-section fade-section">
+      <div class="services-inner container-main">
+        <div class="section-heading-wrap">
+          <h2>Services Category</h2>
+          <span class="section-heading-underline"></span>
+        </div>
+        <div class="services-grid">
+          <div class="service-card fade-section stagger-1">
+            <div class="service-card-icon">
+              <img src="./assets/images/services-1.svg" alt="serivce" />
+            </div>
+            <div class="service-card-label">Grooming</div>
+          </div>
+          <div class="service-card fade-section stagger-2">
+            <div class="service-card-icon">
+              <img src="./assets/images/service-2.svg" alt="service" />
+            </div>
+            <div class="service-card-label">Healthcare</div>
+          </div>
+          <div class="service-card fade-section stagger-3">
+            <div class="service-card-icon">
+              <img src="./assets/images/service-3.svg" alt="service" />
+            </div>
+            <div class="service-card-label">Daycare</div>
+          </div>
+          <div class="service-card fade-section stagger-4">
+            <div class="service-card-icon">
+              <img src="./assets/images/service-4.svg" alt="service" />
+            </div>
+            <div class="service-card-label">Training</div>
+          </div>
+          <div class="service-card fade-section stagger-5">
+            <div class="service-card-icon">
+              <img src="./assets/images/service-5.svg" alt="service" />
+            </div>
+            <div class="service-card-label">Hyginic care</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="paw-img">
+      <img src="./assets/images/paw.png" alt="paw" />
+    </div>
+
+    <!-- SECOND HERO / ABOUT SECTION -->
+    <section
+      class="second-hero-section fade-section"
+      aria-label="About – Dogs do speak"
+    >
+      <div class="second-hero-inner">
+        <div class="second-hero-image-side">
+          <div class="second-hero-blob" aria-hidden="true"></div>
+          <button class="learn-more-btn" aria-label="Learn more – watch video">
+            <img src="./assets/images/play-btn.svg" alt="play-btn" />
+            <span class="learn-text">Learn more</span>
+          </button>
+          <div class="second-hero-float float-paw-tl" aria-hidden="true">
+            <img src="./assets/images/dog-float.svg" alt="paw" />
+          </div>
+          <div class="second-hero-float float-paw-tr" aria-hidden="true">
+            <img src="./assets/images/dog-float.svg" alt="paw" />
+          </div>
+          <div class="second-hero-float float-paw-ml" aria-hidden="true">
+            <img src="./assets/images/dog-float.svg" alt="paw" />
+          </div>
+          <div class="second-hero-float float-bone" aria-hidden="true">
+            <img src="./assets/images/dog-float-2.svg" alt="food" />
+          </div>
+          <div class="second-hero-float float-bowl" aria-hidden="true">
+            <img src="./assets/images/food.svg" alt="food" />
+          </div>
+          <div class="second-hero-dog-wrap">
+            <img src="./assets/images/dog.svg" alt="dog" />
+          </div>
+        </div>
+        <div class="second-hero-content fade-section">
+          <div class="sh-heading-wrap">
+            <h2>Dogs do speak, but only to those who know how to listen.</h2>
+          </div>
+
+          <div class="sh-body-wrap">
+            <p>
+              Sweet roll ice cream powder candy canes ice cream donut pudding
+              biscuit ice cream. Cupcake tootsie roll sugar plum danish pudding
+              fruitcake cheesecake jelly-o. Pie muffin topping cake. Pudding
+              biscuit caramels topb
+            </p>
+          </div>
+
+          <div class="sh-btn-wrap">
+            <button class="sh-explore-btn" aria-label="Explore more">
+              <span>Explore More</span>
+              <span class="btn-arrow" aria-hidden="true">
+                <img src="./assets/images/next.svg" alt="next" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / SECOND HERO SECTION -->
+    <section class="about-section fade-section">
+      <div class="about-inner">
+        <div class="about-content">
+          <div class="about-heading-wrap">
+            <h2>
+              No one appreciates the very special genius of your conversation as
+              the dog does.
+            </h2>
+          </div>
+
+          <div class="about-body-wrap">
+            <p>
+              Sweet roll ice cream powder candy canes ice cream donut pudding
+              biscuit ice cream.biscuit caramels topb
+            </p>
+          </div>
+
+          <div class="about-btn-wrap">
+            <button class="about-explore-btn">
+              <span>Explore More</span>
+              <span class="about-btn-arrow">
+                <img src="./assets/images/next.svg" alt="next" />
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="about-image-side">
+          <div class="about-float-icon about-float-paw-top">
+            <img src="./assets/images/about-2.svg" alt="about" />
+          </div>
+
+          <div class="about-float-icon about-float-collar">
+            <img src="./assets/images/about-3.svg" alt="about" />
+          </div>
+
+          <div class="about-float-icon about-float-paw-mid">
+            <img src="./assets/images/about-5.svg" alt="about" />
+          </div>
+
+          <div class="about-float-icon about-float-bone">
+            <img src="./assets/images/about-4.svg" alt="about" />
+          </div>
+          <div class="about-img-wrap">
+            <img
+              src="./assets/images/about.svg"
+              alt="Man walking with a happy dog"
+              class="about-main-img"
+              onerror="
+                this.style.display = 'none';
+                this.parentElement.classList.add('about-img-fallback');
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  HAPPY CUSTOMER SECTION -->
+    <section class="happy-customer-section fade-section">
+      <div class="container-main">
+        <div class="section-heading-wrap">
+          <h2>Happy Customer</h2>
+          <span class="section-heading-underline"></span>
+        </div>
+        <div class="customer-cards-grid">
+          <div class="customer-card fade-section">
+            <div class="customer-card-inner">
+              <div class="customer-card-image-wrap card-bg-yellow">
+                <img src="assets/images/customer1.svg" alt="Anna and Tobby" />
+              </div>
+              <div class="customer-card-body">
+                <h3>Anna & Tobby</h3>
+                <p>Amazing Products &amp; Delivery on time.</p>
+                <div class="rating-row">
+                  <div class="rating-bones">
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon empty">
+                      <img src="./assets/images/review-2.svg" alt="review" />
+                    </span>
+                  </div>
+                  <span class="rating-score">4.2/5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customer-card fade-section">
+            <div class="customer-card-inner">
+              <div class="customer-card-image-wrap card-bg-pink">
+                <img
+                  src="assets/images/customer2.svg"
+                  alt="Christine and Tom"
+                />
+              </div>
+              <div class="customer-card-body">
+                <h3>Christine & Tom</h3>
+                <p>Love the overall Shipping experience!</p>
+                <div class="rating-row">
+                  <div class="rating-bones">
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                  </div>
+                  <span class="rating-score">4.2/5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="customer-card fade-section">
+            <div class="customer-card-inner">
+              <div class="customer-card-image-wrap card-bg-purple">
+                <img src="assets/images/customer3.svg" alt="Sindy and Kitch" />
+              </div>
+              <div class="customer-card-body">
+                <h3>Sindy & Kitch</h3>
+                <p>Kitch is love food from the pup-hub</p>
+                <div class="rating-row">
+                  <div class="rating-bones">
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                    <span class="bone-icon">
+                      <img src="./assets/images/review-1.svg" alt="review" />
+                    </span>
+                  </div>
+                  <span class="rating-score">4.2/5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-more-wrap">
+          <button class="explore-more-btn">
+            Explore More
+            <img src="./assets/images/next.svg" alt="next-btn" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

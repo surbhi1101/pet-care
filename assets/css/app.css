@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@import "./base.css";
+@import "./components.css";
+@import "./layout.css";
+@import "./utilities.css";
+
+@theme {
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1152px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1920px;
+
+  --color-brand-teal: #1a7a6a;
+  --color-brand-teal-light: #4fb3a0;
+  --color-brand-yellow: #f5c842;
+  --color-brand-bg: #fdf8ed;
+  --color-brand-dark: #1a1a1a;
+  --color-brand-text: #3a3a3a;
+  --color-brand-mint: #d4f0eb;
+  --color-brand-register: #c8ede8;
+
+  --font-heading: "Pangolin", cursive;
+  --font-body: "Roboto", sans-serif;
+}

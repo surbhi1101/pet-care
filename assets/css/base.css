@@ -1,0 +1,48 @@
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --font-Pangolin: "Pangolin", cursive;
+    --font-Roboto: "Roboto", sans-serif;
+    --font-Rubik: "Rubik", sans-serif;
+    --font-Glades: "Glades", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+    font-family: var(--font-Roboto);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-Pangolin);
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  img {
+    @apply max-w-full h-auto block;
+  }
+
+  button {
+    @apply cursor-pointer border-none outline-none;
+  }
+
+  ul {
+    @apply list-none;
+  }
+}

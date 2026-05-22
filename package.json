@@ -1,0 +1,18 @@
+{
+  "name": "pet-care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i assets/css/app.css -o dist/style.css --watch",
+    "build": "tailwindcss -i assets/css/app.css -o dist/style.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

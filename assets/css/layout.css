@@ -1,0 +1,115 @@
+@layer components {
+  /*  SECOND HERO — RESPONSIVE LAYOUT */
+  @media (min-width: 320px) {
+    .second-hero-inner {
+      @apply flex-col gap-10;
+    }
+
+    .second-hero-image-side {
+      @apply w-full min-h-[300px];
+      max-width: 100%;
+    }
+
+    .second-hero-content {
+      @apply items-center text-center w-full;
+      max-width: 100%;
+    }
+
+    .second-hero-content .sh-body-wrap p {
+      @apply mx-auto;
+    }
+
+    .sh-btn-wrap {
+      @apply justify-center;
+    }
+  }
+
+  /* md: 768px — side-by-side layout */
+  @media (min-width: 768px) {
+    .second-hero-inner {
+      @apply flex-row;
+    }
+
+    .second-hero-image-side {
+      flex-shrink: 0;
+      width: 360px;
+      min-height: 400px;
+      max-width: 360px;
+    }
+    .second-hero-content {
+      @apply items-start text-left;
+      max-width: none;
+      flex: 1;
+    }
+
+    .sh-btn-wrap {
+      @apply justify-start;
+    }
+  }
+
+  /* lg: 1152px — wider layout */
+  @media (min-width: 1152px) {
+    .second-hero-image-side {
+      width: 460px;
+      min-height: 500px;
+      max-width: 460px;
+    }
+
+    .learn-more-btn .learn-text {
+      font-size: 13px;
+    }
+
+    .second-hero-blob {
+      max-width: 480px;
+    }
+  }
+
+  /* xl: 1440px — design spec */
+  @media (min-width: 1440px) {
+    .second-hero-image-side {
+      width: 560px;
+      min-height: 580px;
+      max-width: 560px;
+    }
+
+    .second-hero-blob {
+      max-width: 520px;
+    }
+  }
+
+  /* 2xl: 1920px — large screens */
+  @media (min-width: 1920px) {
+    .second-hero-image-side {
+      width: 660px;
+      min-height: 680px;
+      max-width: 660px;
+    }
+
+    .second-hero-blob {
+      max-width: 620px;
+    }
+  }
+
+  /* ── Container ───────────────────────────────────── */
+  .container-main {
+    @apply w-full max-w-[1900px] flex flex-col gap-[56px] mx-auto;
+  }
+
+  /* ── Services Grid ───────────────────────────────── */
+  .services-grid {
+    @apply flex flex-col-reverse lg:flex-row gap-[31px] items-center justify-center;
+  }
+
+  /* Card background color variants */
+  .card-bg-yellow {
+    @apply bg-[#FFF1A6];
+  }
+
+  .card-bg-pink {
+    @apply bg-[#EBA8BF];
+  }
+
+  .card-bg-purple {
+    @apply bg-[#DDC7ED];
+  }
+}
