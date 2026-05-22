@@ -1,10 +1,6 @@
 @layer components {
   /*  SECOND HERO — RESPONSIVE LAYOUT */
   @media (min-width: 320px) {
-    .second-hero-inner {
-      @apply flex-col gap-10;
-    }
-
     .second-hero-image-side {
       @apply w-full min-h-[300px];
       max-width: 100%;

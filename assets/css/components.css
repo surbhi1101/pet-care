@@ -135,7 +135,7 @@
   }
 
   .hero-section {
-    @apply w-full min-h-screen xl:mt-20 xl:pt-[80px] items-start relative overflow-hidden flex md:items-center;
+    @apply w-full min-h-screen xl:mt-20 items-start relative overflow-hidden flex md:items-center;
 
     background-image:
       url("/assets/images/hero-bg.svg"),
@@ -199,7 +199,7 @@
   }
 
   .hero-image-wrap {
-    @apply relative flex items-center w-full mt-30 md:mt-0;
+    @apply relative flex items-center w-full justify-center mt-30 md:mt-0;
   }
 
   .hero-dog-img {
@@ -464,8 +464,8 @@
   }
   .customer-card-image-wrap img {
     @apply w-full object-cover object-top;
-    height: 334px; /* ← taller than wrap */
-    margin-top: -60px; /* ← pulls image UP out of card */
+    height: 400px; /* ← taller than wrap */
+    margin-top: -90px; /* ← pulls image UP out of card */
     border-radius: 33px 33px 0 0;
     position: relative;
     z-index: 2;
@@ -556,10 +556,11 @@
   }
 
   .about-heading-wrap h2 {
-    @apply font-[Pangolin]
-           text-[28px] tracking-[5%] text-[#000000]
-           lg:text-[34px]
-           2xl:text-[50px];
+    @apply font-[Pangolin] font-normal
+         text-[28px] lg:text-[34px] 2xl:text-[50px]
+         leading-[1]
+         tracking-[0.05em]
+         text-[#000000];
   }
 
   .about-body-wrap p {
@@ -677,7 +678,7 @@
   }
 
   .second-hero-inner {
-    @apply max-w-[1440px] items-start mx-auto px-6 xl:pl-[105px] xl:pr-[194px] flex flex-col mt-[20px] pb-[80px] xl:gap-0;
+    @apply max-w-[1440px]  items-start mx-auto px-6 xl:pl-[105px] xl:pr-[194px] flex flex-col gap-10 mt-[20px] pb-[80px] xl:gap-0;
   }
 
   /* ── LEFT: Image Side ── */
@@ -771,7 +772,7 @@
 
   /* ── RIGHT: Content Side ── */
   .second-hero-content {
-    @apply flex flex-col gap-5 w-full;
+    @apply flex flex-col gap-5 w-full mt-10;
     max-width: 560px;
   }
 
